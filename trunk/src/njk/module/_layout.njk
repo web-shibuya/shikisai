@@ -1,0 +1,31 @@
+{% set sitedata = {
+	keyword: '',
+	ogpimg: '/img/common/ogpimg.png',
+	maxW: '(max-width: 479px)',
+	minW: '(min-width: 480px)'
+} %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ param.title }}</title>
+	<meta name="description" content="法人集客にフォーカスしたホームページ制作のご提案を">
+	<meta name="keywords" content="ホームページ制作">
+	<meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/{{ param.page }}.css">
+</head>
+<body>
+	<div class="container">
+		{% include 'module/_header.njk' %}
+		{% block content %}{% endblock %}
+		{% include 'module/_footer.njk' %}
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/{{ param.page }}.js"></script>
+</body>
+</html>

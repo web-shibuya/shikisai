@@ -1,0 +1,72 @@
+{
+	"name": "city-light-cp",
+	"version": "1.0.0",
+	"description": "city-light-cp.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ys-creative/city-light-cp"
+	},
+	"author": "Y's Web Developers.",
+	"license": "ISC",
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "",
+	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/plugin-proposal-class-properties": "^7.16.0",
+		"@babel/preset-env": "^7.16.0",
+		"autoprefixer": "^10.4.0",
+		"babel-eslint": "*",
+		"del": "^6.0.0",
+		"gulp-babel": "*",
+		"gulp-clean-css": "*",
+		"gulp-composer": "*",
+		"gulp-connect": "*",
+		"gulp-connect-php": "*",
+		"gulp-eslint": "*",
+		"gulp-git": "*",
+		"gulp-group-css-media-queries": "*",
+		"gulp-html-beautify": "*",
+		"gulp-htmlhint": "^4.0.1",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-include": "*",
+		"gulp-livereload": "*",
+		"gulp-notify": "^4.0.0",
+		"gulp-nunjucks-render": "*",
+		"gulp-plumber": "*",
+		"gulp-postcss": "^9.0.1",
+		"gulp-prettier": "^4.0.0",
+		"gulp-rename": "*",
+		"gulp-replace": "^1.1.3",
+		"gulp-sftp-up4": "*",
+		"gulp-uglify": "*",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"minimist": "*",
+		"postcss-advanced-variables": "*",
+		"postcss-base64": "*",
+		"postcss-easy-import": "*",
+		"postcss-extend-rule": "*",
+		"postcss-mixins": "^8.1.0",
+		"postcss-nested": "^5.0.6",
+		"postcss-scss": "^4.0.2",
+		"postcss-sorting": "^7.0.1",
+		"require-dir": "*",
+		"stylelint": "^14.0.1",
+		"stylelint-order": "^5.0.0"
+	},
+	"dependencies": {
+		"gulp": "^4.0.0",
+		"postcss-reporter": "^7.0.4"
+	},
+	"browserslist": [
+		">0.5% in JP",
+		"not ie <= 10",
+		"not op_mini all"
+	]
+}

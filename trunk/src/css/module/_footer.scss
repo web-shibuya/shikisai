@@ -1,0 +1,264 @@
+.contact {
+	margin: 100px 0 0;
+	padding: 100px 0;
+	background-color: $gold_sub;
+
+	@media (max-width: $max_w) {
+		padding: 65px 0;
+	}
+
+	.contact__inner {
+		width: 90%;
+		max-width: 760px;
+		margin: auto;
+		text-align: center;
+		line-height: 1;
+
+		.contact__inner__ttl {
+			font-size: 36px;
+			font-weight: bold;
+
+			@media (max-width: $max_w) {
+				font-size: 26px;
+			}
+		}
+
+		.contact__inner__sub {
+			margin: 55px 0 0;
+			font-size: 26px;
+			font-weight: bold;
+
+			@media (max-width: $max_w) {
+				margin: 40px 0 0;
+				font-size: 22px;
+				line-height: 1.5;
+			}
+		}
+
+		.contact__inner__main {
+			margin: 40px 0 0;
+
+			@media (min-width: $min_w) {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.contact__inner__main__tel {
+				&::before {
+					margin: 0 5px 0 0;
+					content: 'TEL';
+					font-size: 26px;
+					font-weight: bold;
+					color: $green;
+				}
+
+				>a {
+					font-family: $font_en;
+					font-size: 46px;
+					font-weight: bold;
+					color: $green;
+
+					@media (min-width: $min_w) {
+						pointer-events: none;
+					}
+
+					@media (max-width: $max_w) {
+						font-size: 36px;
+					}
+				}
+			}
+
+			.contact__inner__main__btn {
+				width: 394px;
+				height: 74px;
+				font-size: 26px;
+
+				@media (max-width: $max_w) {
+					width: 100%;
+					margin: 25px 0 0;
+					font-size: 18px;
+				}
+			}
+		}
+
+		.contact__inner__txt {
+			margin: 30px 0 0;
+
+			@media (max-width: $max_w) {
+				line-height: 1.8;
+			}
+		}
+	}
+}
+
+.contactbtn {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: $green;
+	transition: .3s opacity;
+
+	.contactbtn__inner {
+		padding: 0 0 0 35px;
+		position: relative;
+		color: #fff;
+
+		&::before {
+			width: 30px;
+			height: 21px;
+			display: block;
+			position: absolute;
+			bottom: calc(50% - 2px);
+			left: 0;
+			transform: translateY(50%);
+			content: '';
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(../img/_icon_mail01_w.svg);
+		}
+
+		>span {
+			font-size: 1em;
+			font-weight: bold;
+			line-height: 1;
+		}
+	}
+
+	&.contactbtn--nav {
+		background-color: $gold;
+
+		.contactbtn__inner {
+			color: $bk;
+
+			@media (min-width: $min_w) {
+				width: 30px;
+				height: 21px;
+				padding: 0;
+
+				>span {
+					display: none;
+				}
+
+				&::before {
+					bottom: 50%;
+				}
+			}
+
+			&::before {
+				background-image: url(../img/_icon_mail01.svg);
+
+				@media (max-width: $max_w) {
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+
+	@media (min-width: $min_w) {
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	@media (max-width: $max_w) {
+		&:active {
+			opacity: .5;
+		}
+	}
+}
+
+.footer {
+	padding: 110px 0;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/bg_footer01.png);
+
+	@media (max-width: $max_w) {
+		padding: 70px 0;
+	}
+
+	.footer__logo {
+		width: 111px;
+		height: 30px;
+		margin: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url(../img/_icon_logo01_w.svg);
+	}
+
+	.footer__address {
+		margin: 50px 0 0;
+		line-height: 1.7;
+		color: #fff;
+
+		@media (max-width: $max_w) {
+			margin: 30px 0 0;
+		}
+
+		>a {
+			color: #fff;
+
+			@media (min-width: $min_w) {
+				pointer-events: none;
+			}
+		}
+	}
+
+	.footer__nav {
+		margin: 75px 0 0;
+
+		.footer__nav__link {
+			margin: 0 10px;
+			display: inline-block;
+			position: relative;
+			line-height: 1;
+			font-weight: bold;
+			color: #fff;
+
+			&::after {
+				width: 100%;
+				height: 2px;
+				position: absolute;
+				top: calc(100% + 2px);
+				left: 0;
+				transform: scaleX(0);
+				transform-origin: left center;
+				content: '';
+				background-color: #fff;
+				transition: .3s transform;
+			}
+
+			@media (min-width: $min_w) {
+				&:hover {
+					&::after {
+						transform: scaleX(1);
+					}
+				}
+			}
+		}
+
+		@media (max-width: $max_w) {
+			display: none;
+		}
+	}
+
+	.footer__copy {
+		margin: 75px 0 0;
+		font-size: 13px;
+		line-height: 1;
+		color: #fff;
+
+		@media (max-width: $max_w) {
+			margin: 40px 0 0;
+		}
+	}
+}
