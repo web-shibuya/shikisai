@@ -13,6 +13,21 @@
 
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 	}
+
+	function scrollShow($elms) {
+		let len = $elms.length;
+		let winHeight = window.innerHeight * .6;
+		let $this;
+
+		for (let i = 0; i < len; i++) {
+		  $this = $elms.eq(i);
+
+		  if ($this.offset().top <= window.pageYOffset + winHeight) {
+			$this.addClass('is_show');
+		  }
+		}
+	}
+
 	$(function(){
 		let $nav = $('#js_nav');
 		let $navBtn = $('#js_navbtn');
@@ -156,7 +171,12 @@
 			$totop.removeClass('is_show');
 		}
 
+		let $scrollElms = $('.js_scrollevent');
+    	scrollShow($scrollElms);
+
 		window.onscroll = () => {
+			scrollShow($scrollElms);
+
 			if(window.pageYOffset >= winHeight) {
 				$totop.addClass('is_show');
 			} else {
