@@ -5,8 +5,8 @@ body {
 }
 
 body {
-	font-size: 16px;
-	font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', Arial, 'メイリオ', Meiryo, sans-serif;
+	font-size: 14px;
+	font-family: 'Shippori Mincho', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', Arial, 'メイリオ', Meiryo, sans-serif;
 	line-height: 1.5;
 	color: $bk;
 	background-color: #fff;
@@ -23,4 +23,11 @@ a {
 
 li {
 	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	line-height: 0;
 }

@@ -3,7 +3,7 @@ let baseConfig = {
 	srcDir: 'trunk/src/',
 	publicDir: 'trunk/public/mock/',
 	wp: {
-		themeName: 'genco-cp'
+		themeName: 'shikisai'
 	},
 	gulp: require('gulp'),
 	del: require('del'),
@@ -43,10 +43,7 @@ module.exports = {
 	},
 	copy: {
 		fileDir: [
-			baseConfig.srcDir + 'php/*.php',
-			baseConfig.srcDir + 'favicon/*',
-			baseConfig.srcDir + 'font/*',
-			baseConfig.srcDir + 'mov/*'
+			baseConfig.srcDir + 'favicon/*'
 		]
 	},
 	njk: {

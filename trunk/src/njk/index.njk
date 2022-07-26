@@ -1,198 +1,305 @@
 {% set param = {
 page: 'index',
-title: '法人集客にフォーカスしたホームページ制作のご提案を',
+title: '色を知るたび、世界が広くなる。',
 ogptype: 'website'
 } %}
 {% extends 'module/_layout.njk' %}
 {% block content %}
-<section class="hero" id="js_hero">
-	<div class="hero__body">
-		<h1 class="hero__body__ttl">法人集客に<br class="spblake">フォーカスした<br>ホームページ制作の<br class="spblake">ご提案を</h1>
-		<p class="hero__body__sub">本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキ</p>
-	</div>
-	<div class="hero__foot">
-		<ul class="news">
-			<li class="news__item">
-				<div class="news__item__date">2000/00/00</div>
-				<a href="#" class="news__item__link">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</a>
-			</li>
-		</ul>
-	</div>
-</section>
-<section class="read js_scrollevent">
-	<div class="read__inner">
-		<h2 class="read__inner__ttl">高クオリティの<br class="spblake">ホームページを<br>お手頃価格でご提供</h2>
-		<div class="read__inner__sub">平均受注単価：45～65万円</div>
-		<p class="read__inner__txt">弊社は少数精鋭で制作を進めていくため、大手の制作会社と遜色ない高クオリティなホームページを低コストで制作できます。デザインからコーディング・開発まで基本的に全ての工程を自社内で行うため、無駄な中間コストがかかりません。またデザインが良いだけでなく、集客に繋がるようなご提案をいたします。</p>
-		<div class="read__inner__btn">
-			<a href="#" class="morebtn">
-				<div class="morebtn__inner">詳しく見る</div>
-			</a>
+<div class="l_hero">
+	<div class="hero">
+		<div class="hero_img">
+			<picture>
+				<source media="{{ sitedata.maxW }}" srcset="/img/img_hero01_sp.png">
+				<img src="/img/img_hero01.png" alt="">
+			</picture>
+		</div>
+		<div class="hero_logo">
+			<img src="/img/logo_color01.png" alt="色を知るたび、世界が広くなる。">
+		</div>
+		<div class="hero_btn">
+			<div class="l_entry">
+				<a href="" class="entry entry__arrow" target="_blank"><div>冬期受検<br>申し込み<br>受付中！</div></a>
+			</div>
 		</div>
 	</div>
-</section>
-<section class="cassette js_scrollevent">
-	<div class="cassette__head">
-		<h2 class="cassette__head__ttl">お手頃価格で<br>ご提供</h2>
-		<div class="cassette__head__txt">本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</div>
+</div>
+<div class="l_note" id="note">
+	<div class="note">
+		<div class="note_head">あなたが普段目にしている<br><span>“色”</span>にも意味があり、<br>あなたもその<br class="u_spblake"><span>影響</span>を受けている。</div>
+		<div class="note_body">「色」に関する幅広い知識を問う色彩検定は1990年の開始以来、<br>色をもっと楽しんでもらえるような情報を発信し続けています。<br><br>色は当たり前に存在しているけれど、<br>もしあなたが壁にあたったとき、乗り越えるきっかけになるかもしれません。</div>
 	</div>
-	<div class="cassette__body">
-		<ul class="price js_scrollevent">
-			<li class="price__item">
-				<div class="price__item__inner">
-					<picture class="price__item__inner__img">
-						<source srcset="img/img_price01_sp.png" media="{{ sitedata.maxW }}">
-						<img src="img/img_price01.png" alt="">
-					</picture>
-				</div>
-				<div class="price__item__inner">
-					<div class="price__item__inner__ttl" data-num="01">集客を最優先</div>
-					<div class="price__item__inner__txt">特徴についての文章特徴についての文章特徴についての文章特徴についての文章特徴についての文章</div>
-				</div>
-			</li>
-			<li class="price__item">
-				<div class="price__item__inner">
-					<picture class="price__item__inner__img">
-						<source srcset="img/img_price02_sp.png" media="{{ sitedata.maxW }}">
-						<img src="img/img_price02.png" alt="">
-					</picture>
-				</div>
-				<div class="price__item__inner">
-					<div class="price__item__inner__ttl" data-num="02">安価な制作費用</div>
-					<div class="price__item__inner__txt">特徴についての文章特徴についての文章特徴についての文章特徴についての文章特徴についての文章</div>
-				</div>
-			</li>
-			<li class="price__item">
-				<div class="price__item__inner">
-					<picture class="price__item__inner__img">
-						<source srcset="img/img_price03_sp.png" media="{{ sitedata.maxW }}">
-						<img src="img/img_price03.png" alt="">
-					</picture>
-				</div>
-				<div class="price__item__inner">
-					<div class="price__item__inner__ttl" data-num="03">最先端のデザイン</div>
-					<div class="price__item__inner__txt">特徴についての文章特徴についての文章特徴についての文章特徴についての文章特徴についての文章</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-<section class="cassette cassette--bgimg js_scrollevent">
-	<div class="cassette__head">
-		<h2 class="cassette__head__ttl">制作実績</h2>
-		<p class="cassette__head__txt">本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
-	</div>
-	<div class="cassette__body">
-		<div class="result js_scrollevent">
-			<ul class="result__list" id="js_slider">
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-				<li class="result__list__item">
-					<a href="#" class="result__list__item__link"><img src="img/img_results01.png" alt="制作実績"></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="cassette__foot">
-		<a href="#" class="morebtn">
-			<div class="morebtn__inner">もっと見る</div>
+</div>
+<div class="l_charabtn">
+	<div class="charabtn">
+		<a href="#" class="is_current js_charabtn" data-num="1">
+			<img src="/img/btn_chara01.png" alt="">
+			<div>北山緋彩の物語</div>
+		</a>
+		<a href="#" class="js_charabtn" data-num="2">
+			<img src="/img/btn_chara02.png" alt="">
+			<div>南 七世の物語</div>
 		</a>
 	</div>
-</section>
-<section class="cassette cassette--bggray js_scrollevent">
-	<div class="cassette__head">
-		<h2 class="cassette__head__ttl">デザイン事例</h2>
-		<p class="cassette__head__txt">本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
-	</div>
-	<div class="cassette__body">
-		<ul class="example js_scrollevent">
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-			<li class="example__item">
-				<a href="#" class="example__item__inner">
-					<div class="example__item__inner__img"><img src="img/img_example01.png" alt="デザイン事例"></div>
-					<div class="example__item__inner__ttl">サイトの特徴タイトル</div>
-					<div class="example__item__inner__txt"><p>実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る実績の部分文章が入る</p></div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="cassette__foot">
-		<a href="#" class="morebtn">
-			<div class="morebtn__inner">もっと見る</div>
+</div>
+<div class="l_movie">
+	<div class="movie">
+		<a href="js_mov1" class="movie_inner js_movbtn is_show" data-mov="DbrYHwRTVRc">
+			<img src="/img/img_movie01.png" alt="">
+		</a>
+		<a href="js_mov2" class="movie_inner js_movbtn" data-mov="b629kKQUvwU">
+			<img src="/img/img_movie01.png" alt="">
 		</a>
 	</div>
-</section>
-<section class="blog js_scrollevent">
-	<div class="blog__inner">
-		<h2 class="blog__inner__ttl">BLOG</h2>
-		<div class="blog__inner__btn">
-			<a href="#" class="morebtn">
-				<div class="morebtn__inner">もっと見る</div>
-			</a>
+</div>
+<ul class="l_character" id="js_character">
+	<li class="is_show" id="js_chara01">
+		<div class="character">
+			<div class="character_inner">
+				<picture>
+					<source media="{{ sitedata.maxW }}" srcset="/img/img_chara01_sp.png">
+					<img src="/img/img_chara01.png" alt="">
+				</picture>
+			</div>
+			<div class="character_inner">
+				<div class="character_inner_name">
+					<div>北山<span>緋</span>彩</div>
+					<div><span>H</span>iiro <span>K</span>itayama</div>
+				</div>
+				<div class="character_inner_txt">自分が得意だと思って<br class="u_spblake">入った専門学校でデザインを学ぶ。<br>同級生が将来のために<br class="u_spblake">行動する中で迷う彼は、<br>気になる会社のインタビュー動画を見つける。</div>
+				<div class="character_inner_cv">
+					<div>山下<span>大</span>輝</div>
+					<div><span>D</span>aiki <span>Y</span>amashita</div>
+					<a href="" target="_blank"></a>
+					<div>
+						<img src="/img/pic_cv01.jpg" alt="">
+					</div>
+				</div>
+				<div class="character_inner_comment"></div>
+			</div>
+		</div>
+	</li>
+	<li id="js_chara02">
+		<div class="character">
+			<div class="character_inner">
+				<picture>
+					<source media="{{ sitedata.maxW }}" srcset="/img/img_chara02_sp.png">
+					<img src="/img/img_chara02.png" alt="">
+				</picture>
+			</div>
+			<div class="character_inner">
+				<div class="character_inner_name">
+					<div>南 <span>七</span>世</div>
+					<div><span>N</span>anase <span>M</span>inami</div>
+				</div>
+				<div class="character_inner_txt">希望した業界で<br class="u_spblake">やりがいを感じながら仕事をしている。<br>クライアントの要望も<br class="u_spblake">上手く実現できていると考えていたが、<br>会議室で変更を言い渡されてしまう。</div>
+				<div class="character_inner_cv">
+					<div>東山<span>奈</span>央</div>
+					<div><span>N</span>ao <span>T</span>oyama</div>
+					<a href="" target="_blank"></a>
+					<div>
+						<img src="/img/pic_cv02.jpg" alt="">
+					</div>
+				</div>
+				<div class="character_inner_comment"></div>
+			</div>
+		</div>
+	</li>
+	<li class="is_arrow">
+		<a href="#" class="character character__arrow" id="js_charaarrow"></a>
+	</li>
+</ul>
+<section class="l_cassette l_cassette__talk" id="talk">
+	<div class="cassette cassette__talk">
+		<div class="cassette_head">
+			<h2 class="cassette_head_ttl">アニメイト<span>対</span>談記事</h2>
+			<div class="cassette_head_sub"><span>A</span>nimate <span>D</span>ialogue <span>A</span>rticle</div>
+		</div>
+		<div class="cassette_body"></div>
+		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__gr">
+					<a href="" class="grbtn grbtn__gr" target="_blank">
+						<div>対談を読む</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="blog__inner">
-		<ul class="bloglist">
-			<li class="bloglist__item">
-				<div class="bloglist__item__date">2000/00/00</div>
-				<a href="#" class="bloglist__item__link">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</a>
-			</li>
-			<li class="bloglist__item">
-				<div class="bloglist__item__date">2000/00/00</div>
-				<a href="#" class="bloglist__item__link">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</a>
-			</li>
-			<li class="bloglist__item">
-				<div class="bloglist__item__date">2000/00/00</div>
-				<a href="#" class="bloglist__item__link">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</a>
-			</li>
-		</ul>
+</section>
+<section class="l_cassette l_cassette__tw" id="campaign">
+	<div class="cassette cassette__tw">
+		<div class="cassette_head">
+			<h2 class="cassette_head_ttl">「＃色せか<span>感</span>想キャンペーン」<br class="u_spblake"><span>T</span>witterで実施中！</h2>
+			<div class="cassette_head_sub"><span>T</span>witter <span>C</span>ampaign</div>
+		</div>
+		<div class="cassette_body">
+			<div class="l_campaign">
+				<div class="campaign">
+					<div class="campaign_txt">本作品をみて感想を<br class="u_spblake">Twitterで投稿しよう！<br>抽選で4名の方に豪華アートボードと<br class="u_spblake">声優サイン入り色紙をプレゼント！<br>※アートボードの絵柄はお選び<br class="u_spblake">いただけませんので予めご了承ください。</div>
+					<div class="campaign_flow">
+						<div class="campaign_flow_inner">①色彩検定協会 Twitter公式アカウント<br class="u_spblake">（<a href="https://twitter.com/shikisai_kentei" target="_blank">@shikisai_kentei</a>）をフォロー</div>
+						<div class="campaign_flow_inner">②ハッシュタグ<br class="u_spblake">「<a href="https://twitter.com/intent/tweet?url=https://www.aft.or.jp/shikisaigakuen2022/&hashtags=%E8%89%B2%E3%81%9B%E3%81%8B%E6%84%9F%E6%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3" target="_blank">#色せか感想キャンペーン</a>」と<br class="u_spblake">アニメの感想をつけて<br>対象のツイートを引用RT！</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__pl">
+					<a href="#js_detail" class="grbtn grbtn__pl js_modalbtn">
+						<div>応募概要&amp;規約を読む</div>
+					</a>
+				</div>
+				<div class="l_twdetail" id="js_detail">
+					<div class="twdetail">
+						<div class="twdetail_head">
+							<div class="twdetail_head_ttl">応募<span>概</span>要&amp;規約</div>
+							<div class="twdetail_head_sub"><span>A</span>pplication <span>O</span>utline &amp; <span>T</span>erms and <span>C</span>onditions</div>
+						</div>
+						<div class="twdetail_body">応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要＆規約が入ります応募概要。</div>
+						<div class="twdetail_foot">
+							<div class="l_grbtn l_grbtn__pl">
+								<a href="" class="grbtn grbtn__pl" target="_blank">
+									<div>色彩検定公式Twitterへ</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="l_cassette l_cassette__art" id="art">
+	<div class="cassette cassette__art">
+		<div class="cassette_head">
+			<h2 class="cassette_head_ttl">豪華<span>イ</span>ラストレーター陣に<br class="u_spblake">よる<span>限</span>定イラストを公開！</h2>
+			<div class="cassette_head_sub"><span>I</span>llustrator <span>R</span>elay</div>
+		</div>
+		<div class="cassette_body">
+			<div class="l_art">
+				<div class="art">
+					<div class="art_txt">アニメ公開を記念して豪華イラストレーター陣のかきおろしイラストを公開！<br>順次公開予定なので色彩検定公式アカウントをフォローしてチェック！</div>
+					<ul class="art_list">
+						<li class="art_list_item">
+							<a href="#js_art01" class="art_list_item_link js_modalbtn">
+								<img src="/img/img_artist01.png" alt="">
+							</a>
+							<div class="art_list_item_txt"><span>さ</span>くしゃ2<a href="" target="_blank"></a></div>
+							<div class="l_illust" id="js_art01">
+								<div class="illust">
+									<div class="illust_img">
+										<img src="/img/img_movie01.png" alt="">
+									</div>
+									<div class="illust_name">イラスト：さくしゃ2</div>
+								</div>
+							</div>
+						</li>
+						<li class="art_list_item">
+							<a href="#js_art02" class="art_list_item_link art_list_item_link__disable">
+								<img src="/img/img_artist00.png" alt="">
+							</a>
+							<div class="art_list_item_txt">？？？</div>
+						</li>
+						<li class="art_list_item">
+							<a href="#js_art03" class="art_list_item_link art_list_item_link__disable">
+								<img src="/img/img_artist00.png" alt="">
+							</a>
+							<div class="art_list_item_txt">？？？</div>
+						</li>
+						<li class="art_list_item">
+							<a href="#js_art04" class="art_list_item_link art_list_item_link__disable">
+								<img src="/img/img_artist00.png" alt="">
+							</a>
+							<div class="art_list_item_txt">？？？</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__pn">
+					<a href="https://twitter.com/shikisai_kentei" class="grbtn grbtn__pn" target="_blank">
+						<div>色彩検定公式Twitterへ</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="l_cassette l_cassette__outline" id="outline">
+	<div class="cassette cassette__outline">
+		<div class="cassette_head">
+			<h2 class="cassette_head_ttl">色彩<span>検</span>定とは？</h2>
+			<div class="cassette_head_sub"><span>A</span>dvance <span>F</span>orward <span>T</span>rue <span>C</span>olors</div>
+		</div>
+		<div class="cassette_body">
+			<div class="cassette_body_txt">「色」は身の回りのあらゆるところに存在し、<br>私たちは常にその影響を受けています。<br>色彩検定はそんな色に関する幅広い知識や<br class="u_spblake">技能を問う検定試験。<br>センスや経験に頼らない、<br class="u_spblake">色の活用法を身に付けることができます。</div>
+		</div>
+		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__or">
+					<a href="" class="grbtn grbtn__or" target="_blank">
+						<div>詳しくはこちら</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="cassette_head">
+			<h2 class="cassette_head_ttl">検定<span>概</span>要</h2>
+			<div class="cassette_head_sub"><span>T</span>est <span>O</span>utline</div>
+		</div>
+		<div class="cassette_body">
+			<div class="l_outline">
+				<div class="outline">
+					<div class="outline_head">
+						<h3 class="outline_head_ttl">2022年度<span>冬</span>期検定申込受付中！</h3>
+					</div>
+					<div class="outline_body">
+						<div class="outline_body_inner">
+							<div class="outline_body_inner_ttl">申込期間</div>
+							<div class="outline_body_inner_main">
+								8月8日（月）～<br class="u_spblake">10月11日（火）
+								<div>※書店申込は10月6日（木）まで</div>
+							</div>
+						</div>
+						<div class="outline_body_inner">
+							<div class="outline_body_inner_ttl">受検日</div>
+							<div class="outline_body_inner_main">
+								11月18日（日）
+								<div>※全級実施。<br class="u_spblake">1級2次は12月18日（日）</div>
+							</div>
+						</div>
+					</div>
+					<div class="outline_head">
+						<h3 class="outline_head_ttl">公式<span>テ</span>キスト・<span>過</span>去問題集 販売中！</h3>
+						<div class="outline_head_sub">インターネット通販、<br class="u_spblake">またはお近くの書店にてお求めください。</div>
+					</div>
+					<div class="outline_body">
+						<div class="outline_body_img">
+							<img src="/img/img_book01.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__or">
+					<a href="" class="grbtn grbtn__or" target="_blank">
+						<div>公式テキストご購入はこちら</div>
+					</a>
+				</div>
+			</div>
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__bl">
+					<a href="" class="grbtn grbtn__bl" target="_blank">
+						<div>冬期受検申し込み受付中！</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 {% endblock %}
