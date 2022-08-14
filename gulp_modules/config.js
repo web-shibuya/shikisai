@@ -1,7 +1,7 @@
 // 共通定数
 let baseConfig = {
 	srcDir: 'trunk/src/',
-	publicDir: 'trunk/public/mock/',
+	publicDir: 'trunk/public/mock/findyourtruecolors/',
 	wp: {
 		themeName: 'shikisai'
 	},

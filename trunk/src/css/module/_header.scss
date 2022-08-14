@@ -6,10 +6,15 @@
 	left: 0;
 	z-index: 9990;
 	box-shadow: 0 125px 25px -40px #fff inset;
+	transition: 1s opacity;
 
 	@media (max-width: $max_w) {
 		height: 70px;
-		box-shadow: 0 135px 15px -80px #fff inset;
+		box-shadow: none;
+	}
+
+	&:not(.is_show) {
+		opacity: 0;
 	}
 }
 
@@ -47,6 +52,10 @@
 		@media (min-width: $min_w) {
 			width: 90%;
 			max-width: calc(100% - 250px);
+
+			&.header_nav__4col {
+				max-width: calc(100% - 280px);
+			}
 		}
 	}
 }
@@ -86,10 +95,14 @@
 	.nav_link {
 		@media (min-width: $min_w) {
 			width: 90%;
-			max-width: calc(100% - 250px);
+			max-width: calc(100% - 160px);
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-between;
+
+			&.nav_link__4col {
+				max-width: calc(100% - 260px);
+			}
 		}
 
 		.nav_link_btn {

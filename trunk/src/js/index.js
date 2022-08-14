@@ -171,6 +171,13 @@
 			$totop.removeClass('is_show');
 		}
 
+		window.onload = () => {
+			setTimeout(() => {
+				$('#js_hero').addClass('is_show');
+				$('#js_header').addClass('is_show');
+			}, 100);
+		}
+
 		let $scrollElms = $('.js_scrollevent');
     	scrollShow($scrollElms);
 

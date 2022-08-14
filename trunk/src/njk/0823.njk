@@ -2,7 +2,7 @@
 page: 'index',
 title: '色を知るたび、世界が広くなる。',
 ogptype: 'website',
-talk: true
+talk: false
 } %}
 {% extends 'module/_layout.njk' %}
 {% block content %}
@@ -16,7 +16,7 @@ talk: true
 		</a>
 		<a href="#" class="js_charabtn" data-num="2">
 			<img src="{{ sitedata.imgpath }}btn_chara02.png" alt="">
-			<div>南 七世の物語</div>
+			<div>Comming Soon</div>
 		</a>
 	</div>
 </div>
@@ -25,9 +25,9 @@ talk: true
 		<a href="js_mov1" class="movie_inner js_movbtn is_show" data-mov="LICL-MOOXlY">
 			<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
 		</a>
-		<a href="js_mov2" class="movie_inner js_movbtn" data-mov="M7fDqcaDFWM">
-			<img src="{{ sitedata.imgpath }}img_movie02.png" alt="">
-		</a>
+		<div class="movie_inner movie_inner__disable js_movbtn">
+			<img src="{{ sitedata.imgpath }}img_movie00.png" alt="">
+		</div>
 	</div>
 </div>
 <ul class="l_character js_scrollevent" id="js_character">
@@ -103,7 +103,6 @@ talk: true
 		<a href="#" class="character character__arrow" id="js_charaarrow"></a>
 	</li>
 </ul>
-{% include 'module/_talk.njk' %}
 {% include 'module/_campaign.njk' %}
 <section class="l_cassette l_cassette__art" id="art">
 	<div class="cassette cassette__art js_scrollevent">
@@ -117,68 +116,32 @@ talk: true
 					<div class="art_txt">アニメ公開を記念して豪華イラストレーター陣のかきおろしイラストを公開<br>順次公開予定なので色彩検定公式アカウントをフォローしてチェック！</div>
 					<ul class="art_list">
 						<li class="art_list_item">
-							<a href="#js_art01" class="art_list_item_link js_modalbtn">
+							<a href="https://twitter.com/sakusya2honda" class="art_list_item_link" target="_blank">
 								<img src="{{ sitedata.imgpath }}img_artist01.png" alt="">
 							</a>
 							<a href="https://twitter.com/sakusya2honda" class="art_list_item_txt" target="_blank">
 								<div><span>さ</span>くしゃ2</div><div>@sakusya2honda</div>
 							</a>
-							<div class="l_illust" id="js_art01">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：さくしゃ2</div>
-								</div>
-							</div>
 						</li>
 						<li class="art_list_item">
-							<a href="#js_art02" class="art_list_item_link js_modalbtn">
+							<a href="https://twitter.com/flyco_" class="art_list_item_link" target="_blank">
 								<img src="{{ sitedata.imgpath }}img_artist02.png" alt="">
 							</a>
 							<a href="https://twitter.com/flyco_" class="art_list_item_txt" target="_blank">
 								<div><span>フ</span>ライ</div><div>@flyco_</div>
 							</a>
-							<div class="l_illust" id="js_art02">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：フライ</div>
-								</div>
-							</div>
 						</li>
-						<li class="art_list_item">
-							<a href="#js_art03" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist03.png" alt="">
+						<li class="art_list_item art_list_item__disable">
+							<a href="#js_art02" class="art_list_item_link">
+								<img src="{{ sitedata.imgpath }}img_artist00.png" alt="">
 							</a>
-							<a href="https://twitter.com/C_hkt" class="art_list_item_txt" target="_blank">
-								<div><span>タ</span>カ氏</div><div>@C_hkt</div>
-							</a>
-							<div class="l_illust" id="js_art03">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：タカ氏</div>
-								</div>
-							</div>
+							<div class="art_list_item_txt"><div>？？？</div></div>
 						</li>
-						<li class="art_list_item">
-							<a href="#js_art04" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist04.png" alt="">
+						<li class="art_list_item art_list_item__disable">
+							<a href="#js_art02" class="art_list_item_link">
+								<img src="{{ sitedata.imgpath }}img_artist00.png" alt="">
 							</a>
-							<a href="https://twitter.com/lalalalack" class="art_list_item_txt" target="_blank">
-								<div><span>l</span>ack</div><div>@lalalalack</div>
-							</a>
-							<div class="l_illust" id="js_art04">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：lack</div>
-								</div>
-							</div>
+							<div class="art_list_item_txt"><div>？？？</div></div>
 						</li>
 					</ul>
 				</div>

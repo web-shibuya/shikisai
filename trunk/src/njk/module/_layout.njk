@@ -1,6 +1,10 @@
 {% set sitedata = {
 	keyword: '',
 	ogpimg: '/img/common/ogpimg.png',
+	imgpath: '/findyourtruecolors/img/',
+	twurl: 'https://twitter.com/shikisai_kentei',
+	inurl: 'https://www.instagram.com/shikisai_kentei/',
+	entryurl: 'https://www.aft.or.jp/exam-orders',
 	maxW: '(max-width: 479px)',
 	minW: '(min-width: 480px)'
 } %}
@@ -9,17 +13,65 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ param.title }}</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<title>色を知るたび、世界が広くなる。色彩検定協会ショートアニメ特設サイト</title>
+	<meta name="description" content="「色」に関する幅広い知識を問う色彩検定は1990年の開始以来、色をもっと楽しんでもらえるような情報を発信し続けています。色は当たり前に存在しているけれど、もしあなたが壁にあたったとき、乗り越えるきっかけになるかもしれません。">
+	<link rel="canonical" href="https://www.aft.or.jp/findyourtruecolors">
+	<meta property="og:title" content="色を知るたび、世界が広くなる。色彩検定協会ショートアニメ特設サイト">
+	<meta property="og:description" content="「色」に関する幅広い知識を問う色彩検定は1990年の開始以来、色をもっと楽しんでもらえるような情報を発信し続けています。色は当たり前に存在しているけれど、もしあなたが壁にあたったとき、乗り越えるきっかけになるかもしれません。">
+	<meta property="og:url" content="https://www.aft.or.jp/findyourtruecolors">
+	<meta property="og:image" content="https://www.aft.or.jp/findyourtruecolors/img/ogp.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="色を知るたび、世界が広くなる。色彩検定協会ショートアニメ特設サイト">
+	<meta name="twitter:description" content="「色」に関する幅広い知識を問う色彩検定は1990年の開始以来、色をもっと楽しんでもらえるような情報を発信し続けています。色は当たり前に存在しているけれど、もしあなたが壁にあたったとき、乗り越えるきっかけになるかもしれません。">
+	<meta name="twitter:image" content="https://www.aft.or.jp/findyourtruecolors/img/ogp.png">
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WSFSDN6');</script>
+
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W4PZTFL');</script>
+
+	<!-- End Google Tag Manager -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/findyourtruecolors/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/findyourtruecolors/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/findyourtruecolors/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/findyourtruecolors/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/findyourtruecolors/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/findyourtruecolors/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/findyourtruecolors/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/findyourtruecolors/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/findyourtruecolors/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/findyourtruecolors/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/findyourtruecolors/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/findyourtruecolors/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/findyourtruecolors/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/findyourtruecolors/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="msapplication-TileImage" content="/findyourtruecolors/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#fff">
 
 	<meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/{{ param.page }}.css">
+	<link rel="stylesheet" type="text/css" href="/findyourtruecolors/css/{{ param.page }}.css">
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WSFSDN6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W4PZTFL"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<div class="container" id="top">
 		{% block content %}{% endblock %}
 		{% include 'module/_header.njk' %}
@@ -27,6 +79,6 @@
 	</div>
 	{% include 'module/_modal.njk' %}
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/{{ param.page }}.js"></script>
+	<script type="text/javascript" src="/findyourtruecolors/js/{{ param.page }}.js"></script>
 </body>
 </html>

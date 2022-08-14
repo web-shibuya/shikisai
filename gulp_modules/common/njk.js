@@ -24,7 +24,7 @@ config.gulp.task('njk', (callback) => {
 		}
 		//index以外は、ファイル名からディレクトリ名を取得
 		let namelist = path.basename.split('-');
-		let len = namelist.length-1;
+		let len = namelist.length - 1;
 		for(let i = 0; i<=len; i++) {
 			path.dirname += '/' + namelist[i];
 		}

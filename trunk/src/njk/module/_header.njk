@@ -1,25 +1,25 @@
-<div class="l_header">
+<div class="l_header" id="js_header">
 	<header class="header">
 		<a href="#top" class="header_logo">
-			<img src="/img/logo_mono01.svg" alt="色を知るたび、世界が広くなる。">
+			<img src="{{ sitedata.imgpath }}logo_mono01.svg" alt="色を知るたび、世界が広くなる。">
 		</a>
-		<div class="header_nav">
+		<div class="header_nav{% if param.talk == false %} header_nav__4col{% endif %}">
 			<div class="l_nav" id="js_nav">
 				<nav class="nav">
-					<div class="nav_link">
+					<div class="nav_link{% if param.talk == false %} nav_link__4col{% endif %}">
 						<a href="#note" class="nav_link_btn js_pagescroll">制作概要</a>
-						<a href="#talk" class="nav_link_btn js_pagescroll">対談記事</a>
+						{% if param.talk %}<a href="#talk" class="nav_link_btn js_pagescroll">特別対談</a>{% endif %}
 						<a href="#campaign" class="nav_link_btn js_pagescroll">Twitterキャンペーン</a>
 						<a href="#art" class="nav_link_btn js_pagescroll">限定イラスト</a>
 						<a href="#outline" class="nav_link_btn js_pagescroll">色彩検定とは？</a>
 					</div>
 					<div class="nav_sns">
-						<a href="" class="nav_sns_btn" target="_blank"></a>
-						<a href="" class="nav_sns_btn" target="_blank"></a>
+						<a href="{{ twurl }}" class="nav_sns_btn" target="_blank"></a>
+						<a href="{{ inurl }}" class="nav_sns_btn" target="_blank"></a>
 					</div>
 					<div class="nav_entry">
 						<div class="l_entry">
-							<a href="" class="entry" target="_blank"><div>冬期受検<br>申し込み<br>受付中！</div></a>
+							<a href="{{ entryurl }}" class="entry" target="_blank"><div>冬期受検<br>申し込み<br>受付中！</div></a>
 						</div>
 					</div>
 				</nav>
