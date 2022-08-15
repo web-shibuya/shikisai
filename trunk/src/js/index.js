@@ -130,7 +130,7 @@
 		});
 
 		let $charabtn = $('.js_charabtn');
-		if(window.innerWidth <= spBlake) {
+		if(window.innerWidth > spBlake) {
 			$charabtn.hover((e) => {
 				$(e.currentTarget).addClass('is_active');
 				$charabtn.not('.is_active').addClass('is_shot');

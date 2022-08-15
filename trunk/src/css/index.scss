@@ -471,7 +471,7 @@
 			@media (max-width: $max_w) {
 				width: 100%;
 				padding: 0 8px 0 10px;
-				font-size: 5.5vw;
+				font-size: 5vw;
 				text-align: center;
 				line-height: 1.5;
 				letter-spacing: 1.5vw;
@@ -535,27 +535,6 @@
 
 				@media (max-width: $max_w) {
 					transform: translateY(50%) scale(1.2);
-				}
-			}
-		}
-	}
-
-	&.charabtn__disable {
-		pointer-events: none;
-
-		>a {
-			&:nth-child(2) {
-				>img {
-					left: 50%;
-					transform: translate(-50%, 50%);
-				}
-
-				>div {
-					width: 100%;
-					right: 50%;
-					transform: translate(50%, 50%);
-					transform-origin: center;
-					text-align: center;
 				}
 			}
 		}
@@ -680,7 +659,7 @@
 				line-height: 1;
 				text-align: center;
 				letter-spacing: 5px;
-				content: 'Comming Soon';
+				content: 'Coming Soon';
 				color: #fff;
 			}
 		}
