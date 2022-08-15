@@ -130,13 +130,15 @@
 		});
 
 		let $charabtn = $('.js_charabtn');
-		$charabtn.hover((e) => {
-			$(e.currentTarget).addClass('is_active');
-			$charabtn.not('.is_active').addClass('is_shot');
-		}, (e) => {
-			$(e.currentTarget).removeClass('is_active');
-			$charabtn.not('.is_active').removeClass('is_shot');
-		});
+		if(window.innerWidth <= spBlake) {
+			$charabtn.hover((e) => {
+				$(e.currentTarget).addClass('is_active');
+				$charabtn.not('.is_active').addClass('is_shot');
+			}, (e) => {
+				$(e.currentTarget).removeClass('is_active');
+				$charabtn.not('.is_active').removeClass('is_shot');
+			});
+		}
 
 		$charabtn.on('click', (e) => {
 			let $this = $(e.currentTarget);

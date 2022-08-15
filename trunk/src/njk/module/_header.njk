@@ -8,18 +8,18 @@
 				<nav class="nav">
 					<div class="nav_link{% if param.talk == false %} nav_link__4col{% endif %}">
 						<a href="#note" class="nav_link_btn js_pagescroll">制作概要</a>
-						{% if param.talk %}<a href="#talk" class="nav_link_btn js_pagescroll">特別対談</a>{% endif %}
+						{% if param.talk %}<a href="#talk" class="nav_link_btn js_pagescroll">特別インタビュー</a>{% endif %}
 						<a href="#campaign" class="nav_link_btn js_pagescroll">Twitterキャンペーン</a>
 						<a href="#art" class="nav_link_btn js_pagescroll">限定イラスト</a>
 						<a href="#outline" class="nav_link_btn js_pagescroll">色彩検定とは？</a>
 					</div>
 					<div class="nav_sns">
-						<a href="{{ twurl }}" class="nav_sns_btn" target="_blank"></a>
-						<a href="{{ inurl }}" class="nav_sns_btn" target="_blank"></a>
+						<a href="{{ sitedata.twurl }}" class="nav_sns_btn" target="_blank"></a>
+						<a href="{{ sitedata.inurl }}" class="nav_sns_btn" target="_blank"></a>
 					</div>
 					<div class="nav_entry">
 						<div class="l_entry">
-							<a href="{{ entryurl }}" class="entry" target="_blank"><div>冬期受検<br>申し込み<br>受付中！</div></a>
+							<a href="{{ sitedata.entryurl }}" class="entry" target="_blank"><div>冬期受検<br>申し込み<br>受付中！</div></a>
 						</div>
 					</div>
 				</nav>

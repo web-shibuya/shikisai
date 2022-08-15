@@ -17,7 +17,7 @@
 	overflow: hidden;
 
 	@media (min-width: $min_w) {
-		padding: 40px 0 0;
+		padding: 60px 0 0;
 	}
 }
 
@@ -114,7 +114,15 @@
 		transition: 1s border .5s;
 
 		@media (max-width: $max_w) {
-			width: 25px;
+			width: 40px;
+		}
+	}
+
+	&.l_grbtn__small {
+		&::after {
+			@media (max-width: $max_w) {
+				width: 25px;
+			}
 		}
 	}
 
@@ -129,6 +137,13 @@
 		&::after {
 			border-bottom-color: $pl;
 			border-right-color: $pl;
+		}
+	}
+
+	&.l_grbtn__pn2 {
+		&::after {
+			border-bottom-color: $pn;
+			border-right-color: $pn;
 		}
 	}
 
@@ -204,12 +219,22 @@
 		color: #fff;
 	}
 
+	&.grbtn__small {
+		&::before {
+			padding: 200% 0 0;
+		}
+	}
+
 	&.grbtn__gr {
 		background-color: $gl;
 	}
 
 	&.grbtn__pl {
 		background-color: $pl;
+	}
+
+	&.grbtn__pn2 {
+		background-color: $pn;
 	}
 
 	&.grbtn__pn {
@@ -243,10 +268,14 @@
 
 .hero {
 	max-width: 1040px;
-	height: 100vh;
 	margin: auto;
+	padding: 0 0 150px;
 	position: relative;
 	transition: 1s opacity, 1s transform;
+
+	@media (max-width: $max_w) {
+		padding: 0 0 120px;
+	}
 
 	&::before,
 	&::after {
@@ -258,52 +287,18 @@
 
 	&::before {
 		content: 'Scroll';
-		bottom: 105px;
+		bottom: 110px;
 		font-size: 12px;
 		line-height: 1;
+		letter-spacing: 1px;
 	}
 
 	&::after {
 		width: 1px;
 		height: 100px;
-		top: calc(100% - 85px);
+		bottom: 0;
 		content: '';
 		background-color: $bk;
-	}
-
-	.hero_img {
-		position: relative;
-
-		&::after {
-			width: 100vw;
-			height: 100%;
-			position: absolute;
-			right: 50%;
-			bottom: -10px;
-			transform: translateX(50%);
-			content: '';
-			box-shadow: 0px -80px 60px -15px #fff inset;
-			border-radius: 100vw;
-		}
-
-		@media (max-width: $max_w) {
-			overflow: hidden;
-
-			&::after {
-				width: 110vw;
-				bottom: -110px;
-				box-shadow: 0px -246px 50px -15px #fff inset;
-			}
-		}
-	}
-
-	.hero_logo {
-		width: 90%;
-		max-width: 595px;
-		position: absolute;
-		right: 50%;
-		bottom: 110px;
-		transform: translateX(50%);
 	}
 
 	.hero_btn {
@@ -312,6 +307,10 @@
 		position: absolute;
 		right: -30px;
 		bottom: 80px;
+
+		@media (max-width: 1040px) {
+			right: 30px;
+		}
 
 		@media (max-width: $max_w) {
 			display: none;
@@ -327,11 +326,11 @@
 .l_note {
 	max-width: $w_pc;
 	margin: auto;
-	padding: 200px 0 0;
+	padding: 60px 0 0;
 	position: relative;
 
 	@media (max-width: $max_w) {
-    	padding: 50px 0 0;
+    	padding: 20px 0 0;
 	}
 
 	&::before {
@@ -741,7 +740,7 @@
 			@media (max-width: $max_w) {
 				width: 35px;
 				height: 35px;
-				bottom: 65%;
+				bottom: 76%;
     			right: 30px;
 			}
 		}
@@ -849,7 +848,7 @@
 
 		.character_inner_cv {
 			width: calc(100% - 130px);
-			margin: 200px 0 0;
+			margin: 170px 0 0;
 			position: relative;
 
 			@media (max-width: $max_w) {
@@ -1549,7 +1548,7 @@
 		@media (max-width: $max_w) {
 			height: 15vh;
 			margin: 20px auto 0;
-			font-size: 16px;
+			font-size: 14px;
 		}
 
 		.interview_body_ttl {
@@ -1604,7 +1603,7 @@
 		}
 
 		.interview_foot_btn {
-			max-width: 400px;
+			max-width: 330px;
 			height: 62px;
 			margin: 40px auto 0;
 			font-size: 21px;
@@ -1613,7 +1612,7 @@
 				max-width: 255px;
 				height: 50px;
 				margin: 20px auto 0;
-				font-size: 14px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -1686,12 +1685,12 @@
 	.campaign_period {
 		max-width: 670px;
 		margin: 40px auto 0;
-		display: flex;
-		justify-content: space-between;
-		flex-flow: row wrap;
 		font-size: 20px;
 
 		@media (min-width: $min_w) {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
 			align-items: center;
 		}
 
@@ -1707,6 +1706,7 @@
 
 			@media (max-width: $max_w) {
 				width: 110px;
+				margin: auto;
 				letter-spacing: 1px;
 			}
 		}
@@ -1716,9 +1716,9 @@
 			letter-spacing: 2px;
 
 			@media (max-width: $max_w) {
-				width: calc(100% - 130px);
+				width: 100%;
 				margin: 5px 0 0;
-				text-align: left;
+				text-align: center;
 				line-height: 1.8;
 				letter-spacing: 0;
 			}
