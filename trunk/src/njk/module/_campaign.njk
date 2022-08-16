@@ -10,7 +10,18 @@
 					<div class="campaign_txt">本作品をみて感想を<br class="u_spblake">Twitterで投稿しよう！<br>抽選で4名の方に豪華アートボードと<br class="u_spblake">声優サイン入り色紙をプレゼント<br>※アートボードの絵柄はお選び<br class="u_spblake">いただけませんので予めご了承ください。</div>
 					<div class="campaign_flow">
 						<div class="campaign_flow_inner">①色彩検定協会 Twitter公式アカウント<br class="u_spblake">（<a href="{{ sitedata.twurl }}" target="_blank">@shikisai_kentei</a>）をフォロー</div>
-						<div class="campaign_flow_inner">②ハッシュタグ<br class="u_spblake">「<a href="https://twitter.com/intent/tweet?url=https://www.aft.or.jp/shikisaigakuen2022/&hashtags=%E8%89%B2%E3%81%9B%E3%81%8B%E6%84%9F%E6%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3" target="_blank">#色せか感想キャンペーン</a>」と<br class="u_spblake">アニメの感想をつけて<br>対象のツイートを引用RT</div>
+						<div class="campaign_flow_inner">
+							②ハッシュタグ<br class="u_spblake">「<span>#色せか感想キャンペーン</span>」と<br class="u_spblake">アニメの感想をつけて<br>対象のツイートを引用RT
+							{% if param.twbtn != true %}
+							<div>
+								<div class="l_grbtn l_grbtn__pl l_grbtn__small">
+									<a href="" class="grbtn grbtn__pl" target="_blank">
+										<div>キャンペーンツイートはこちら</div>
+									</a>
+								</div>
+							</div>
+							{% endif %}
+						</div>
 					</div>
 					<div class="campaign_period">
 						<div class="campaign_period_ttl">申込期間</div>
@@ -20,6 +31,13 @@
 			</div>
 		</div>
 		<div class="cassette_foot">
+			<div class="cassette_foot_inner">
+				<div class="l_grbtn l_grbtn__pl">
+					<a href="{{ sitedata.twurl }}" class="grbtn grbtn__pl" target="_blank">
+						<div>色彩検定公式Twitterへ</div>
+					</a>
+				</div>
+			</div>
 			<div class="cassette_foot_inner">
 				<div class="l_grbtn l_grbtn__pl">
 					<a href="#js_detail" class="grbtn grbtn__pl js_modalbtn">
@@ -45,7 +63,7 @@
 							2.ハッシュタグ「#色せか感想キャンペーン」を付けて、アニメの感想とともに該当のツイートを引用リツイート。<br><br>
 							【抽選・結果発表】<br>
 							抽選の上、当選者を決定いたします。<br>
-							応募時に使用されたTwitterアカウントへのDM（ダイレクトメッセージ）にて当選通知と発送先登録フォームURLを送信させていただきます。DMに記載されている期日までに登録登録してください。<br><br>
+							応募時に使用されたTwitterアカウントへのDM（ダイレクトメッセージ）にて当選通知と発送先登録フォームURLを送信させていただきます。DMに記載されている期日までに登録してください。<br><br>
 							利用規約<br>
 							ご応募いただく前に、キャンペーン概要と合わせてご確認ください。<br>
 							ご応募いただいた方は、掲示されている各事項を理解いただき、本規約に「同意」したとみなさせていただきます。<br><br>
@@ -72,7 +90,7 @@
 							・Twitterの利用規約に違反している。<br>
 							・自動プログラムを利用して応募。<br>
 							・複数のTwitterアカウントからの応募。<br>
-							・代理応募。（親族の代理応募も禁止となります）<br>
+							・代理応募。（ただし13歳未満でTwitterアカウントを保有できない場合、保護者による代理応募は可）<br>
 							・本キャンペーンの運営を妨げる行為。<br>
 							・特定の団体や個人に対する誹謗中傷。<br>
 							・公序良俗に反する行為。<br>
@@ -105,7 +123,7 @@
 							・キャンペーン応募の対象投稿に不備があった場合は、投稿を削除することがあります。また削除された投稿に応募いただいた場合は、応募は無効とさせていただきます。予めご了承をお願いいたします。<br>
 							・今回のキャンペーンはTwitterのプラットフォーム及びAPIを利用しております。システム障害などが発生し、応募が正常に行われない場合があります。障害発生時の応募は、運営側でも確認ができない応募なりますので、無効とさせていただきます。予めご了承をお願いいたします。<br>
 							・本キャンペーンはキャンペーンを円滑に進める為、キャンペーン用システムを導入して運用をしております。利用システムに障害などが発生し、応募が正常に行われない場合があります。万が一障害が発生した場合、障害発生中の応募は、運営側でも確認ができないため無効とさせていただきます。予めご了承をお願いいたします。<br>
-							・本キャンペーンの内容は、予告なく変更する場合があります。また、本応募規約は、当社の判断により随時改訂することができるものとします。この場合、当社の公式Twitter上で通知することにより、キャンペーン内容の変更または本応募規約の改訂を随時告知します。告知後は、当該変更または改訂された内容が、本キャンペーンの全ての応募者の方と当社との間で適用されるものとします。<br>
+							・本キャンペーンの内容は、予告なく変更する場合があります。また、本応募規約は、当社の判断により随時改訂することができるものとします。この場合、当社の公式Twitter上で通知することにより、キャンペーン内容の変更または本応募規約の改訂を随時告知します。告知後は、当該変更または改訂された内容が、本キャンペーンの全ての応募者の方と当社との間で適用されるものとします<br>
 							・本応募規約の解釈および運用は日本法に準拠するものとします。<br><br>
 							【お問い合わせ先】<br>
 							Eメールアドレス：aft-campaign2022@asakonet.co.jp<br>

@@ -2,7 +2,8 @@
 page: 'index',
 title: '色を知るたび、世界が広くなる。',
 ogptype: 'website',
-talk: true
+talk: true,
+art: '0908'
 } %}
 {% extends 'module/_layout.njk' %}
 {% block content %}
@@ -33,95 +34,6 @@ talk: true
 {% include 'module/_character.njk' %}
 {% include 'module/_talk.njk' %}
 {% include 'module/_campaign.njk' %}
-<section class="l_cassette l_cassette__art" id="art">
-	<div class="cassette cassette__art js_scrollevent">
-		<div class="cassette_head">
-			<h2 class="cassette_head_ttl">豪華<span>イ</span>ラストレーター陣に<br class="u_spblake">よる<span>限</span>定イラストを公開</h2>
-			<div class="cassette_head_sub"><span>I</span>llustrator <span>R</span>elay</div>
-		</div>
-		<div class="cassette_body">
-			<div class="l_art">
-				<div class="art art__tw">
-					<div class="art_txt">アニメ公開を記念して豪華イラストレーター陣のかきおろしイラストを公開<br>順次公開予定なので色彩検定公式アカウントをフォローしてチェック！</div>
-					<ul class="art_list">
-						<li class="art_list_item">
-							<a href="#js_art01" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist01.png" alt="">
-							</a>
-							<a href="https://twitter.com/sakusya2honda" class="art_list_item_txt" target="_blank">
-								<div><span>さ</span>くしゃ2</div><div>@sakusya2honda</div>
-							</a>
-							<div class="l_illust" id="js_art01">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：さくしゃ2</div>
-								</div>
-							</div>
-						</li>
-						<li class="art_list_item">
-							<a href="#js_art02" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist02.png" alt="">
-							</a>
-							<a href="https://twitter.com/flyco_" class="art_list_item_txt" target="_blank">
-								<div><span>フ</span>ライ</div><div>@flyco_</div>
-							</a>
-							<div class="l_illust" id="js_art02">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：フライ</div>
-								</div>
-							</div>
-						</li>
-						<li class="art_list_item">
-							<a href="#js_art03" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist03.jpg" alt="">
-							</a>
-							<a href="https://twitter.com/C_hkt" class="art_list_item_txt" target="_blank">
-								<div><span>タ</span>カ氏</div><div>@C_hkt</div>
-							</a>
-							<div class="l_illust" id="js_art03">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：タカ氏</div>
-								</div>
-							</div>
-						</li>
-						<li class="art_list_item">
-							<a href="#js_art04" class="art_list_item_link js_modalbtn">
-								<img src="{{ sitedata.imgpath }}img_artist04.png" alt="">
-							</a>
-							<a href="https://twitter.com/lalalalack" class="art_list_item_txt" target="_blank">
-								<div><span>l</span>ack</div><div>@lalalalack</div>
-							</a>
-							<div class="l_illust" id="js_art04">
-								<div class="illust">
-									<div class="illust_img">
-										<img src="{{ sitedata.imgpath }}img_movie01.png" alt="">
-									</div>
-									<div class="illust_name">イラスト：lack</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="cassette_foot">
-			<div class="cassette_foot_inner">
-				<div class="l_grbtn l_grbtn__pn">
-					<a href="{{ twurl }}" class="grbtn grbtn__pn" target="_blank">
-						<div>色彩検定公式Twitterへ</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'module/_art.njk' %}
 {% include 'module/_outline.njk' %}
 {% endblock %}
