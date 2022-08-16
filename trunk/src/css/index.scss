@@ -1242,6 +1242,12 @@
 				font-size: 16px;
 			}
 		}
+
+		.cassette_foot_txt {
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.8;
+		}
 	}
 
 	&.cassette__talk {
@@ -1539,7 +1545,7 @@
 		line-height: 1.8;
 
 		@media (max-width: $max_w) {
-			height: 20vh;
+			height: 21vh;
 			margin: 20px auto 0;
 			font-size: 14px;
 		}
@@ -1593,6 +1599,7 @@
 					letter-spacing: 1px;
 
 					@media (max-width: $max_w) {
+						margin: 10px 0 0;
 						font-size: 10px;
 					}
 				}
@@ -1600,7 +1607,7 @@
 		}
 
 		.interview_foot_btn {
-			max-width: 330px;
+			max-width: 400px;
 			height: 62px;
 			margin: 40px auto 0;
 			font-size: 21px;
@@ -1848,6 +1855,20 @@
 			font-size: 16px;
 			line-height: 2.5;
 			letter-spacing: 1px;
+		}
+	}
+
+	.art_btn {
+		max-width: 400px;
+		height: 62px;
+		margin: 30px auto 0;
+		font-size: 21px;
+		letter-spacing: 5px;
+
+		@media (max-width: $max_w) {
+			max-width: 280px;
+			height: 50px;
+			font-size: 16px;
 		}
 	}
 
