@@ -88,8 +88,10 @@
 		let $movbtn = $('.js_movbtn');
 
 		$movbtn.on('click', (e) => {
+			let $this = $(e.currentTarget);
+			let movId = $this.data('mov');
+
 			$movmodal.addClass('is_show');
-			let movId = $(e.currentTarget).data('mov');
 
 			moviePlayer.setMovie({
 				playerID: 'js_mov',
@@ -104,7 +106,6 @@
 					controls: 1,
 					modestbranding: 1,
 					enablejsapi: 1,
-					showinfo: 0,
 					rel: 0,
 					wmode: 'transparent'
 				},
