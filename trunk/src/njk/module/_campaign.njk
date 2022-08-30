@@ -1,12 +1,15 @@
 <section class="l_cassette l_cassette__tw" id="campaign">
 	<div class="cassette cassette__tw js_scrollevent">
 		<div class="cassette_head">
-			<h2 class="cassette_head_ttl">「＃色せか<span>感</span>想キャンペーン」<br class="u_spblake"><span>T</span>witterで実施中</h2>
+			<h2 class="cassette_head_ttl">「＃色せか<span>感</span>想キャンペーン」<br class="u_spblake"{% if param.art != '0908' %}><span>T</span>witterで実施中{% endif %}</h2>
 			<div class="cassette_head_sub"><span>C</span>ampaign <span>O</span>utline &amp; <span>T</span>erms</div>
 		</div>
 		<div class="cassette_body">
 			<div class="l_campaign">
 				<div class="campaign">
+					{% if param.art == '0908' %}
+						<div class="campaign_closetxt">応募受付は終了しました。<br class="u_spblake">沢山のご応募ありがとうございました。</div>
+					{% endif %}
 					<div class="campaign_txt">本作品をみて感想を<br class="u_spblake">Twitterで投稿しよう！<br>抽選で4名の方に豪華アートボードと<br class="u_spblake">声優サイン入り色紙をプレゼント<br>※アートボードの絵柄はお選び<br class="u_spblake">いただけませんので予めご了承ください。</div>
 					<div class="campaign_flow">
 						<div class="campaign_flow_inner">①色彩検定協会 Twitter公式アカウント<br class="u_spblake">（<a href="{{ sitedata.twurl }}" target="_blank">@shikisai_kentei</a>）をフォロー</div>
@@ -31,6 +34,7 @@
 			</div>
 		</div>
 		<div class="cassette_foot">
+			{% if param.art != '0908' %}
 			<div class="cassette_foot_inner">
 				<div class="l_grbtn l_grbtn__pl">
 					<a href="{{ sitedata.twurl }}" class="grbtn grbtn__pl" target="_blank">
@@ -38,6 +42,7 @@
 					</a>
 				</div>
 			</div>
+			{% endif %}
 			<div class="cassette_foot_inner">
 				<div class="l_grbtn l_grbtn__pl">
 					<a href="#js_detail" class="grbtn grbtn__pl js_modalbtn">
