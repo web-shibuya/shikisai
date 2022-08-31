@@ -1641,10 +1641,23 @@
 	margin: auto;
 	text-align: center;
 
+	.campaign_closetxt {
+		font-size: 25px;
+		font-weight: bold;
+
+		@media (max-width: $max_w) {
+			font-size: 4.5vw;
+		}
+	}
+
 	.campaign_txt {
 		font-size: 18px;
 		line-height: 3;
 		letter-spacing: 2px;
+
+		&:nth-child(n+2) {
+			margin: 30px 0 0;
+		}
 
 		@media (max-width: $max_w) {
 			font-size: 16px;
@@ -2104,6 +2117,10 @@
 	padding: 40px;
 	background-color: #fff;
 
+	@media (max-width: $max_w) {
+		padding: 25px;
+	}
+
 	&:not(.is_show) {
 		display: none;
 	}
@@ -2120,6 +2137,11 @@
 		font-weight: 600;
 		line-height: 1;
 		text-align: right;
+
+		@media (max-width: $max_w) {
+			top: calc(100% + 6px);
+			font-size: 13px;
+		}
 	}
 }
 

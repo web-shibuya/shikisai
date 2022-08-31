@@ -60,12 +60,17 @@
 		});
 
 		let $modal = $('#js_modal');
+		let $modalInner = $('#js_modal_inner');
 		let $modalMain = $('#js_modal_main');
 		let $modalbtn = $('.js_modalbtn');
 
 		$modalbtn.on('click', (e) => {
-			let $elm = $($(e.currentTarget).attr('href')).clone();
+			let $this = $(e.currentTarget);
+			let $elm = $($this.attr('href')).clone();
 			$modalMain.append($elm.addClass('is_show'));
+			if($this.data('art')) {
+				$modalInner.addClass('is_art');
+			}
 
 			setTimeout(() => {
 				$modal.addClass('is_show');
@@ -78,6 +83,7 @@
 			$modal.removeClass('is_show');
 
 			setTimeout(() => {
+				$modalInner.removeClass('is_art');
 				$modalMain.empty();
 			}, 1000);
 

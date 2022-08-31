@@ -90,3 +90,16 @@
 		transform: translate(50%, 50%);
 	}
 }
+
+.modal {
+	&.is_art {
+		width: 100%;
+		max-width: 550px;
+
+		.modal_close {
+			@media (max-width: $max_w) {
+				right: 10px;
+			}
+		}
+	}
+}
