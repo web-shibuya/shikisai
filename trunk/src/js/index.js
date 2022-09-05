@@ -85,7 +85,7 @@
 			setTimeout(() => {
 				$modalInner.removeClass('is_art');
 				$modalMain.empty();
-			}, 1000);
+			}, 300);
 
 			return false;
 		});

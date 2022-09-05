@@ -1116,7 +1116,7 @@
 	}
 
 	&.l_cassette__talk,
-	&.l_cassette__art {
+	&.l_cassette__tw {
 		&::before {
 			left: calc(100% - 630px);
 
@@ -1126,7 +1126,7 @@
 		}
 	}
 
-	&.l_cassette__tw,
+	&.l_cassette__art,
 	&.l_cassette__outline {
 		&::before {
 			right: calc(100% - 630px);
@@ -1642,8 +1642,11 @@
 	text-align: center;
 
 	.campaign_closetxt {
+		padding: 10px;
 		font-size: 25px;
 		font-weight: bold;
+		color: #fff;
+		background-color: $pl;
 
 		@media (max-width: $max_w) {
 			font-size: 4.5vw;
@@ -2025,6 +2028,7 @@
 						border-radius: 1000px;
 						box-shadow: 65px 65px 40px -50px #000078 inset;
 						transition: $sec box-shadow;
+						pointer-events: none;
 					}
 
 					@media (min-width: $min_w) {
